@@ -1,0 +1,22 @@
+/* BEPTUS.COM STİL DOSYASI */
+
+div{
+    margin: 6px;
+    padding: 3px;
+    width:auto;
+    height:auto;
+    display:inline-flex;
+    background-color: rgb(253, 224, 213);
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+.menu {
+    width: 60%;
+}
+li {
+    list-style: none;
+}
+.logo {
+    text-decoration: none;
+}
