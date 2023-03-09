@@ -1,22 +1,84 @@
 /* BEPTUS.COM STİL DOSYASI */
+@import url(../fonts/bahnschrift.ttf);
 
-div{
-    margin: 6px;
-    padding: 3px;
-    width:auto;
-    height:auto;
-    display:inline-flex;
-    background-color: rgb(253, 224, 213);
-    border: 2px;
-    border-style: solid;
-    border-color: black;
+:root{
+    --ana-renk:rgba(249, 247, 247, 1);
+    --koyu-renk:rgba(17, 45, 78, 1);
+    --hafif-renk:rgba(219, 226, 239, 1);
+    --vurgu-renk:rgba(63, 114, 175,1);
+    --beyaz-renk:rgba(255, 255, 255, 1);
+    --border: 0.1rem solid rgba(255,255,255 0.4);
 }
-.menu {
-    width: 60%;
-}
-li {
-    list-style: none;
-}
-.logo {
+
+*{
+    font-family: Bahnschrift, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: none;
+    border: none;
     text-decoration: none;
+    text-transform:capitalize;
+    transition: 02.s ease;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:var(--ana-renk);
+    height: 200vh;
+}
+
+.header {
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 10px -8px rgb(0, 0, 0, 0.8);
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 7rem;
+}
+.header .ust-menu a{
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--koyu-renk);
+    border-bottom: 0.3rem solid transparent;
+}
+
+.header .ust-menu .aktif,
+.header .ust-menu a:hover{
+    border-color: var(--koyu-renk);
+    padding-bottom:0.6rem;
+
+}
+
+.header .ust-buton button {
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-left: 2.2rem;
+    background-color: transparent;
+}
+
+.header .ust-buton .kullanici {
+    padding: 0.8rem;
+    border: 0.4rem solid var(--beyaz-renk);
+    border-radius: 2.2rem;
+    background-color: var(--koyu-renk);
+    color: var(--ana-renk);
+}
+.header .ust-buton .kullanici:hover {
+    border-color:var(--koyu-renk) ;
+    background-color: var(--beyaz-renk);
+    color: var(--koyu-renk);
 }

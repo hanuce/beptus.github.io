@@ -1,0 +1,1 @@
+/* Burası scriptlerden oluşuyor */
