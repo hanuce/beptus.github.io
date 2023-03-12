@@ -1,5 +1,5 @@
 /* BEPTUS.COM STİL DOSYASI */
-@import url(../fonts/bahnschrift.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
 
 :root{
     --ana-renk:rgba(249, 247, 247, 1);
@@ -11,7 +11,7 @@
 }
 
 *{
-    font-family: Bahnschrift, sans-serif;
+    font-family: 'Kanit', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing:border-box;
@@ -29,7 +29,6 @@ html{
 }
 body{
     background-color:var(--ana-renk);
-    height: 200vh;
 }
 
 .header {
@@ -42,13 +41,25 @@ body{
     border-radius: 30rem;
     box-shadow: 0px 0px 10px -8px rgb(0, 0, 0, 0.8);
     position:sticky;
-    position:-webkit-sticky;
     top:0;
     z-index: 1000;
 }
 .header .logo img{
     height: 7rem;
+
 }
+a.logo{
+    color: var(--beyaz-renk);
+    background-color: var(--koyu-renk);
+    font-size: 2.6rem;
+    padding: 1.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.4rem;
+    border-style: solid 0.1rem;
+    border-radius:3.2rem ;
+
+}
+
 .header .ust-menu a{
     margin: 0 1rem;
     font-size: 1.8rem;
@@ -72,7 +83,9 @@ body{
 
 .header .ust-buton .kullanici {
     padding: 0.8rem;
-    border: 0.4rem solid var(--beyaz-renk);
+    padding-top: 0.4rem;
+    margin: 0.8rem;
+    border: 0.2rem solid var(--beyaz-renk);
     border-radius: 2.2rem;
     background-color: var(--koyu-renk);
     color: var(--ana-renk);
@@ -81,4 +94,41 @@ body{
     border-color:var(--koyu-renk) ;
     background-color: var(--beyaz-renk);
     color: var(--koyu-renk);
+}
+section{
+    min-height: 100vh;
+    padding:0 8%;
+}
+section.ana{
+    margin-top: -12rem;
+    display: flex;
+    align-items:center;
+}
+.ana-icerik{
+    font-size: 260%;
+}
+
+.ana-icerik h1{
+    color: var(--koyu-renk);
+}
+.ana-icerik p.acilim{
+    color: var(--koyu-renk);
+}
+.ana-icerik p.metin{
+    color: var(--vurgu-renk);
+}
+
+.ic-buton{
+    background-color:var(--koyu-renk);
+    color:var(--beyaz-renk);
+    padding:1.2rem;
+    border-radius: 3rem;
+}
+.ic-buton:hover{
+    background-color:var(--beyaz-renk);
+    color:var(--koyu-renk);
+    border: 0.2rem solid;
+}
+.sol-gorsel img {
+    height: 50vh;
 }
