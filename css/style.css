@@ -19,7 +19,7 @@
     border: none;
     text-decoration: none;
     text-transform:capitalize;
-    transition: 02.s ease;
+    transition: 0.2s ease;
 }
 html{
     font-size: 62.5%;
@@ -31,7 +31,7 @@ body{
     background-color:var(--ana-renk);
 }
 
-.header {
+header {
     background-color:#fff;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@ body{
     top:0;
     z-index: 1000;
 }
-.header .logo img{
+header .logo img{
     height: 7rem;
 
 }
@@ -53,35 +53,36 @@ a.logo{
     background-color: var(--koyu-renk);
     font-size: 2.6rem;
     padding: 1.2rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.4rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
     border-style: solid 0.1rem;
     border-radius:3.2rem ;
 
 }
 
-.header .ust-menu a{
+.ustMenu a{
     margin: 0 1rem;
     font-size: 1.8rem;
     color: var(--koyu-renk);
     border-bottom: 0.3rem solid transparent;
 }
 
-.header .ust-menu .aktif,
-.header .ust-menu a:hover{
+.ustMenu .aktif,
+.ustMenu a:hover{
     border-color: var(--koyu-renk);
     padding-bottom:0.6rem;
 
 }
-
-.header .ust-buton button {
+.slider .uye-ol,
+.butonlar button {
     cursor: pointer;
     font-size: 1.8rem;
     margin-left: 2.2rem;
     background-color: transparent;
 }
 
-.header .ust-buton .kullanici {
+.slider .uye-ol,
+.butonlar .kullanici {
     padding: 0.8rem;
     padding-top: 0.4rem;
     margin: 0.8rem;
@@ -90,7 +91,8 @@ a.logo{
     background-color: var(--koyu-renk);
     color: var(--ana-renk);
 }
-.header .ust-buton .kullanici:hover {
+.slider .uye-ol:hover,
+.butonlar .kullanici:hover {
     border-color:var(--koyu-renk) ;
     background-color: var(--beyaz-renk);
     color: var(--koyu-renk);
@@ -99,36 +101,29 @@ section{
     min-height: 100vh;
     padding:0 8%;
 }
-section.ana{
+section.sliderBolumu{
     margin-top: -12rem;
-    display: flex;
+    display:flex;
+    background: transparent;
     align-items:center;
 }
-.ana-icerik{
+.slider{
     font-size: 260%;
 }
 
-.ana-icerik h1{
+.slider h1{
     color: var(--koyu-renk);
 }
-.ana-icerik p.acilim{
+.slider .metin{
     color: var(--koyu-renk);
 }
-.ana-icerik p.metin{
+.slider .aciklama{
     color: var(--vurgu-renk);
 }
-
-.ic-buton{
-    background-color:var(--koyu-renk);
-    color:var(--beyaz-renk);
-    padding:1.2rem;
-    border-radius: 3rem;
-}
-.ic-buton:hover{
-    background-color:var(--beyaz-renk);
-    color:var(--koyu-renk);
-    border: 0.2rem solid;
-}
-.sol-gorsel img {
+.slaytResim {
+    width: 24vw;
+    display:flex;
+    float: right;
+    z-index: -5;
     height: 50vh;
 }
