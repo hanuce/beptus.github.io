@@ -10,43 +10,157 @@
     <link rel="shortcut icon" href="img/b-icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="js/slider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css" integrity="sha512-aupidr80M36SeyviA/hZ2uEPnvt2dTJfyjm9y6z1MgaV13TgzmDiFdsH3cvSNG27mRIj7gJ2gNeg1HeySJyE3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>BEPTUS</title>
 </head>
 <body>
-    <div class="kapsayici">
+    <!--Tüm sayfa kapsayıcı div içinde-->
+    <div class="kapsayici" id="anasayfa">
+        <!-- Burası header, sticky olması için section dışında-->
         <header>
-            <a href="#" class="logo">BEPTUS</a>
+            <a href="#anasayfa" class="logo">BEPTUS</a>
             <nav class="ustMenu">
-                <a href="#" class="aktif">Neden?</a>
-                <a href="#">Özellikler</a>
-                <a href="#">Ücretlendirme</a>
-                <a href="#">Hakkımızda</a>
-                <a href="#">İletişim</a>
+                <a href="#neden">Neden?</a>
+                <a href="#ozellikler">Özellikler</a>
+                <a href="#ucretlendirme">Ücretlendirme</a>
+                <a href="#hakkimizda">Hakkımızda</a>
+                <a href="#iletisim">İletişim</a>
             </nav>
             <div class="butonlar">
-                <button class="kullanici">Oturum Açın</button>
-                <button class="cizgi-menu"><i class="fa-solid fa-bars"></i></button>
+                <button class="standart">Oturum Açın</button>
+                <button class="fa-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
             </div>
         </header>
-        <section class="sliderBolumu">
+        <!-- Burası slider kısmının olduğu anasayfa kısmı-->
+        <section class="anasayfa">
             <div class="slider">
-                <div class="slaytResim">
-                    <img class="slaytResim-animasyon-left" src="img/banners/activeteam.png" alt="">
-                </div>
                 <h1>B E P T U S</h1>
-                <p class="metin">
+                <p>
                     <strong>BİLSEM Ekiplerinin Proje Tasarlama ve Uygulama Sistemi</strong>
                 </p>
-                <p class="aciklama">
-                    Projelerinize Takım Arkadaşları Bulun Ve Takımınızla Projeyi Çevik Bir Şekilde Yönetin...
+                <p class="altMetin">
+                    Projelerinize Takım Arkadaşları Bulun, <br>Takımınızla Projeyi Çevik Bir Şekilde Yönetin...
                 </p>
-                <button class="uye-ol">ÜYE OL</button>
+                <button class="standart">ÜYE OL</button>
+            </div>
 
+        </section>
+        <!-- Burası Neden bölümü-->
+        <section class="neden" id="neden">
+            <div class="icerik">
+                <h1>Neden BEPTUS ?</h1>
+                <br>
+                <p>
+                    <strong>"Proje Yönetimi"</strong> projelerin başarısı için en önemli değişkendir. Proje fikirlerinin <strong>doğru</strong> yönetimsel süreçle başarıya ulaşan bir<strong> "Proje"</strong> olması için <strong>BEPTUS</strong> size destek olur.
+                </p>
+                <img src="img/banners/task.png" alt="">
+            </div>
+            <div class="icerik">
+                <img src="img/banners/together.png" alt="">
+                <h1>Projene Ortak Bul <br>Veya Ortak Ol!</h1>
+                <br>
+                <p>
+                    Proje gruplarına katılmak,  fikirlerini proje haline getirmek, projen için tam da ihtiyacın olan ekip arkadaşını bulmak için en iyi araç.
+                </p>
+            </div>
+            <div class="icerik">
+                <img src="img/banners/procces.png" alt="">
+                <h1>Projeni Etkili Yönet</h1>
+                <br>
+                <p>
+                    Proje sürecinde iş ve adımları böl, planla, takip et, zamanını yönet ve başarıya ulaş.<br>
+                    <strong>Uygulamalı Bilimler,<br> Doğa Bilimleri,<br> Sosyal Bilimler</strong> için uygun...
+                </p>
+            </div>
+        </section>
+        <!-- Burası özellikler bölümü-->
+        <section class="ozellikler" id="ozellikler">
+        <div class="icerik">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="30%" height="30%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#112d4e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                    <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+                  </svg>
+                <h1>Öğrenciler</h1>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus beatae omnis dignissimos nisi earum, odit voluptas, amet ea veniam deserunt dolores.
+                </p>
+            </div>
+            <div class="icerik">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="30%" height="30%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#112d4e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                </svg>
+                <h1>Öğretmenler</h1>
+                <br>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis harum earum deleniti neque corporis pariatur doloribus, fugit sequi praesentium molestias accusamus ipsum quas quisquam eveniet atque.
+                </p>
+            </div>
+            <div class="icerik">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building" width="30%" height="30%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#112d4e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="3" y1="21" x2="21" y2="21" />
+                    <line x1="9" y1="8" x2="10" y2="8" />
+                    <line x1="9" y1="12" x2="10" y2="12" />
+                    <line x1="9" y1="16" x2="10" y2="16" />
+                    <line x1="14" y1="8" x2="15" y2="8" />
+                    <line x1="14" y1="12" x2="15" y2="12" />
+                    <line x1="14" y1="16" x2="15" y2="16" />
+                    <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
+                  </svg>
+                <h1>Kurumlar</h1>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt libero deserunt esse voluptas saepe iusto inventore laborum, nostrum ipsum animi laudantium optio ullam perspiciatis repellat? Velit obcaecati eaque perspiciatis voluptatem natus.
+                </p>
+            </div>
+        </section>
+        <!-- Burası Ücretlendirme bölümü-->
+        <section class="ucretlendirme" id="ucretlendirme">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-open-source" width="30%" height="30%" viewBox="0 0 24 24" stroke-width="1.5" stroke="#112d4e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 3a9 9 0 0 1 3.618 17.243l-2.193 -5.602a3 3 0 1 0 -2.849 0l-2.193 5.603a9 9 0 0 1 3.617 -17.244z" />
+            </svg>
+            <h1>Her zaman ücretsiz...</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora unde, officia nisi natus perspiciatis aliquid, necessitatibus commodi doloremque cum ducimus amet culpa obcaecati. Cumque, exercitationem. Dolore tenetur reiciendis est rerum id sint, ipsa quas maxime natus atque libero qui blanditiis nulla quos.
+            </p>
 
+        </section>
+        <!-- Burası Hakkımızda bölümü-->
+        <section class="hakkimizda" id="hakkimizda">
+            <div class="icerik">
+                <h1>Hikayemiz</h1>
+                <hr><br>
+                <p>
+                    Ahmet Yüksel Özemre Bilim ve Sanat Merkezi öğrenileri ve öğretmenleri olarak böyle bir ihtiyaç hissettik. Kurumda yaptığımız "Ben Varım - Biz Varız" toplantıları ile sürecin önemli olduğuna karar verdik ve BEPTUS için öğremtne ve öğrencilerle görüşmeye başladık.
+                </p>
+                <br>
+                <h1>Katkıda Bulunanlar</h1>
+                <hr><br>
+                <strong>Ahmet Yüksel Özemre BİLSEM Öğrencileri ile Öğretmenleri </strong>
+                <br>
+                <br>
+                <h3>AYRICA</h3>
+                <i>H.N. ÇETİNKAYA, C. ÖTKÜNÇ, S. ARSLAN, B. KUŞKONMAZ, İ. SOSYAL, İ.T. KARADAĞ,...</i>
+            </div>
+        </section>
+        <!-- Burası İeltişim bölümü-->
+        <section class="iletisim" id="iletisim">
+            <div class="icerik">
+                <h1>İletişim</h1>
+                <h3>Adres: </h3>
+                <address>SELAMİ ALİ MAH. CUMHURİYET CAD. AHMET YÜKSEL ÖZEMRE BİLİM VE SANAT MERKEZİ BLOK NO: 60/1 ÜSKÜDAR / İSTANBUL</address>
+                <h3>Telefon: </h3><a href="tel:+902165320038">0216 532 00 38</a>
+                <iframe style="height:60%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Selamiali,+Ahmet+Yüksel+Özemre+Bilim+ve+Sanat+Merkezi,+Cumhuriyet+Caddesi,+Üsküdar/İstanbul,+Türkiye&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>  
             </div>
         </section>
     </div>
-    
 </body>
 </html>

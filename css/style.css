@@ -7,57 +7,74 @@
     --hafif-renk:rgba(219, 226, 239, 1);
     --vurgu-renk:rgba(63, 114, 175,1);
     --beyaz-renk:rgba(255, 255, 255, 1);
-    --border: 0.1rem solid rgba(255,255,255 0.4);
+    --border: 0.1rem solid rgba(255,255,255, 0.4);
+    --golge: 0px 0px 10px -8px rgb(0, 0, 0, 0.8);
 }
 
 *{
     font-family: 'Kanit', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0;/* 0 yapılacak */
+    padding: 0; /* 0 yapılacak */
     box-sizing:border-box;
     outline: none;
-    border: none;
     text-decoration: none;
-    text-transform:capitalize;
+    text-transform:none;
     transition: 0.2s ease;
 }
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
 body{
     background-color:var(--ana-renk);
+
+}
+
+div,section{
+    /*border: 1px; /* silinecek */
+    /*border-color: black; /* silinecek */
+    /*border-style: solid; /* silinecek */   
+}
+
+
+section{
+    background-color: var(--beyaz-renk);
+    min-height: 84vh;
+    height: 83vh;
+    display: block;
+    margin: 2rem 8%;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: var(--golge)
+}
+div img{
+    width: 16vw;
 }
 
 header {
-    background-color:#fff;
+    background-color:var(--beyaz-renk);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 7%;
-    margin: 2rem 7%;
-    border-radius: 30rem;
-    box-shadow: 0px 0px 10px -8px rgb(0, 0, 0, 0.8);
-    position:sticky;
-    top:0;
+    justify-content:space-between;
+    padding: 0.2rem 8%;
+    margin: 2rem 8%;
+    border-radius: 2rem;
+    box-shadow: var(--golge);
+    position: sticky;
+    top: 1.25rem;
     z-index: 1000;
 }
-header .logo img{
-    height: 7rem;
 
-}
 a.logo{
     color: var(--beyaz-renk);
     background-color: var(--koyu-renk);
     font-size: 2.6rem;
-    padding: 1.2rem;
+    padding: 0.8rem;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     border-style: solid 0.1rem;
     border-radius:3.2rem ;
-
 }
 
 .ustMenu a{
@@ -67,22 +84,20 @@ a.logo{
     border-bottom: 0.3rem solid transparent;
 }
 
-.ustMenu .aktif,
+a.aktif,
 .ustMenu a:hover{
     border-color: var(--koyu-renk);
     padding-bottom:0.6rem;
-
 }
-.slider .uye-ol,
+
 .butonlar button {
     cursor: pointer;
     font-size: 1.8rem;
     margin-left: 2.2rem;
     background-color: transparent;
 }
-
-.slider .uye-ol,
-.butonlar .kullanici {
+.standart,
+.butonlar .standart {
     padding: 0.8rem;
     padding-top: 0.4rem;
     margin: 0.8rem;
@@ -91,39 +106,55 @@ a.logo{
     background-color: var(--koyu-renk);
     color: var(--ana-renk);
 }
-.slider .uye-ol:hover,
-.butonlar .kullanici:hover {
+.standart:hover,
+.butonlar .standart:hover {
     border-color:var(--koyu-renk) ;
     background-color: var(--beyaz-renk);
     color: var(--koyu-renk);
 }
-section{
-    min-height: 100vh;
-    padding:0 8%;
-}
-section.sliderBolumu{
-    margin-top: -12rem;
-    display:flex;
-    background: transparent;
-    align-items:center;
-}
-.slider{
-    font-size: 260%;
+.anasayfa{
+    font-size: 360%;
+    text-align: right;
+    color: var(--koyu-renk);
+    background-image:url(../img/banners/activeteam.png);
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: 50%, 25%, 25%;
+    background-position-x: 4rem;
 }
 
-.slider h1{
+.slider p.altMetin{color: var(--vurgu-renk);}
+.iletisim,
+.hakkimizda,
+.ucretlendirme,
+.neden{
+    display: flex;
+    font-size: 200%;
+    text-align:center;
     color: var(--koyu-renk);
 }
-.slider .metin{
+.icerik{
+    background-color: var(--ana-renk);
+    box-shadow: var(--golge);
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+.icerik p {text-align: justify;}
+.icerik img{
+    display: block;
+    float:left;
+    margin: 1.2rem;
+}
+
+.ozellikler{
+    display: flex;
+    font-size: 200%;
+    text-align:center;
     color: var(--koyu-renk);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
-.slider .aciklama{
-    color: var(--vurgu-renk);
-}
-.slaytResim {
-    width: 24vw;
-    display:flex;
-    float: right;
-    z-index: -5;
-    height: 50vh;
+.ucretlendirme {
+    display: block;
 }
